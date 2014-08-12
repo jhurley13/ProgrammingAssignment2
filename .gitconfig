@@ -1,0 +1,31 @@
+[user]
+        email = jhurley13@gmail.com
+        name = John Hurley
+
+[core]
+        mergeoptions = --no-ff --no-commit
+
+[alias]
+        df = diff
+        dc = diff --cached
+        ls = ls-files -o -i --exclude-standard
+        st = status
+        ci = commit -v
+        co = checkout
+        sm = submodule
+        sf = submodule foreach
+        hist = log --graph --date=short --pretty=format:\"%h %ad | %s%d [%an]\"
+
+[core]
+        whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+		excludesfile = /Users/john/Desktop/github/.gitignore
+
+[merge]
+        tool = opendiff
+        stat = true
+        prompt = false
+
+[diff]
+        renames = copies
+        mnemonicprefix = true
+
